@@ -20,11 +20,8 @@ from django.http import HttpResponse
 
 #http request <- http response
 
-# HTTP RESQUEST
-
 def my_view(request):
     return HttpResponse('Uma string')
-    # HTTP Response
 
 urlpatterns = [
     path('admin/', admin.site.urls),
