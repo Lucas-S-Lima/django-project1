@@ -24,6 +24,7 @@
         body {
             font-size: 1.6rem;
             font-family: sans-serif;
+            background: rgb(255, 249, 224)
         }
         
         .container {
@@ -33,12 +34,12 @@
         }
         
         .main-header-container {
-            background: #13141f;
+            background: #1f5833;
         }
 
         .main-logo {
             font-size: 4rem;
-            color: greenyellow;
+            color: rgb(255, 222, 92);
             text-decoration: none;
             display: flex;
             flex-flow: row nowrap ;
@@ -51,6 +52,50 @@
 
         .main-logo-icon {
             margin-right: 1rem;
+        }
+        
+        .search-form {
+            border: .25rem solid rgb(47, 47, 47);
+            max-width: 64rem;
+            margin: auto;
+            border-radius: 0.5rem;
+            position: relative;
+            transition: all 150ms ease-in-out;
+        }
+
+        .search-form:focus-within {
+            border-color: rgb(46, 205, 219);
+            background: rgb(255, 255, 255);
+        }
+
+        .search-form:focus-within .search-button {
+            color: rgb(46, 205, 219);
+        }
+
+
+        .search-input,
+        .search-button {
+            border: none ;
+            background: none;
+            outline: none;
+            padding: 1rem;
+            transition: all 150ms ease-in-out;
+        }
+        
+        .search-button:focus-within {
+            background: #73737334;
+            color: white;
+        }
+
+        .search-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .search-input {
+            width: 100%;
+            padding-right: 3rem;
         }
     
     </style>
