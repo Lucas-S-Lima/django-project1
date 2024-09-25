@@ -1,1 +1,1 @@
-Projeto de uma página web com Django
+Projeto de um site de receitas culinárias com um sistema CRUD com Django.
